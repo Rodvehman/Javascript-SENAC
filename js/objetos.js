@@ -10,3 +10,10 @@ const pessoa = {
 };
 
 console.log(pessoa);
+
+// Acessamos as propriedades usando o nomeDoObjeto.propriedade
+console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos`);
+
+
+
+
