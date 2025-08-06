@@ -12,8 +12,19 @@ const pessoa = {
 console.log(pessoa);
 
 // Acessamos as propriedades usando o nomeDoObjeto.propriedade
+console.log("Exemplo 1\n");
+
 console.log(`O ${pessoa.nome} tem ${pessoa.idade} anos`);
 
+// Exemplo 2: Objeto con Array
+console.log("Exemplo 2\n");
 
+const livro = {
+    titulo: "O Senhor dos Anéis",
+    autor: "J.R.R Tolkien",
+    volumes: ["A Sociedade do Anel", "As Duas Torres", "O Retorno do Rei"]
+}
 
+// Para acessar algum dos volumes, primeiro passamos pela propriedade (volumes), usando 'ponto' e, chegando nela, usamos os 'colchetes' com índice, pois se trata de um Array.
 
+console.log(`Meu livro preferido é o ${livro.titulo} - ${livro.volumes[1]}`);
