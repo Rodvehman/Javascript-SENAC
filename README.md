@@ -20,3 +20,9 @@ Introdução ao JavaScript para programação web.
  * Carrossel/Slider de Conteúdo;
  * Recursos avançados de formulários (validação mais profissional, integração com API);
  * Interações avançadas (manipulaçãode teclado, mouse, gestos);
+
+ ## Sobre Objetos
+
+ * Objetos: Estrutura de Dados **não indexados**;
+ * Acesso aos dados é feito de forma diferente de arrays. Acessado pelas **propriedades** e **valores declarados** do objeto;
+ * Normalmente o objeto é programado de acordo com algum contexto  relacionado ao mundo real.
