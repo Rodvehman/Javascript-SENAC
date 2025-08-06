@@ -16,4 +16,18 @@ console.log(coisas[coisas.length-1]);
 
 let itens = ["Deus", "Filmes", "Música", "Família", "Dinheiro", 1.78, "12"];
 
-console.log(`Segundo item: ${itens[1]}`+`\nQuinto item: ${itens[4]}`+`\nSétimo item: ${itens[6]}`);
+console.log(`Segundo item: ${itens[1]};`+`\nQuinto item: ${itens[4]};`+`\nSétimo item: ${itens[6]}.`);
+
+// Matriz
+
+const tecnologias = [
+    ["HTLM", "CSS", "JS"], 
+    ["Figma", "Photoshop"],
+    ["PHP", "Node.js", "SQL", "Expess"]
+];
+
+console.log(tecnologias[0][2]);
+
+console.log(tecnologias[1][0]);
+
+console.log(tecnologias[2][3]);
