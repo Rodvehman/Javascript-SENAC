@@ -28,3 +28,21 @@ const livro = {
 // Para acessar algum dos volumes, primeiro passamos pela propriedade (volumes), usando 'ponto' e, chegando nela, usamos os 'colchetes' com índice, pois se trata de um Array.
 
 console.log(`Meu livro preferido é o ${livro.titulo} - ${livro.volumes[1]}`);
+
+const livros = [
+    {
+        título: "O Assassinato no Oriente Express",
+        autor: "Agatha Christie"
+    },
+    {
+        título: "Deuses, Túmulo e Sábios",
+        autor: "C.W. Ceran"
+    },
+    {
+        título: "Harry Potter e a Pedra Filosofal",
+        autor: "J. K. Rowling"
+    }
+]
+
+console.log(livros[2].título);
+
