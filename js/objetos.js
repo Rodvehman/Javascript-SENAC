@@ -63,7 +63,7 @@ console.log(livros[2].título);
 const aluno = {
     nomeCompleto: "Rodrigo Alexandre",
     dataNascimento: "14/08/1977",
-    listaTelefones: ["115669-1543", "1197314-1408"],
+    listaTelefones: ["(11)5669-1543", "(11)97314-1408"],
     endereco: {
         rua: "Irineu Correia da Silva",
         numero: 216,
