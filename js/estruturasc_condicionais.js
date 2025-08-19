@@ -1,4 +1,4 @@
-'strict use';
+'use strict';
 
 /* Comandos condicionais mais comuns:
     if -> se
@@ -16,19 +16,46 @@ if (numero >= 10){
 }
 
 
-let aluno ="Ozzy";
-let idade = 18
-
-let aluno2 = {
+let aluno = {
     nome: "Ozzy",
     idade: 18
 };
 
-if (aluno2.idade >= 18){
+if (aluno.idade >= 18){
     console.log("Maior");
 } else {
     console.log("Menor");
 }
 
-aluno2.idade >= 18? console.log("maior") : console.log("Menor");
+aluno.idade >= 18? console.log("maior") : console.log("Menor");
 
+let aluno2 = {
+    nome: "Carlos",
+    nota1: 10,
+    nota2: 0
+};
+
+let media = (aluno2.nota1 + aluno2.nota2)/2;
+
+let resposta = "aprovado"; 
+
+if (media >= 7){
+    resposta = "aprovado";
+} else {
+    resposta = "reprovado";
+}
+
+console.log(`O Aluno ${aluno2.nome} foi ${resposta}, com a média ${media}`);
+
+aluno2.nome = "João";
+aluno2.nota2 = 7;
+
+media = (aluno2.nota1 + aluno2.nota2)/2;
+
+if (media >= 7){
+    resposta = "aprovado";
+} else {
+    resposta = "reprovado";
+}
+
+console.log(`O Aluno ${aluno2.nome} foi ${resposta}, com a média ${media}`);
