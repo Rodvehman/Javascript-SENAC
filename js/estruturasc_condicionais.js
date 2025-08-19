@@ -67,7 +67,10 @@ console.log(`O Aluno ${aluno2.nome.toUpperCase()} foi ${resposta.toUpperCase()},
     Média abaixo de 5: péssimo.
 */
 
-let mediaAluno = 5;
+let n1 = 10;
+let n2 = 4;
+
+let mediaAluno = (n1 + n2) / 2;
 let msg;
 
 
@@ -84,3 +87,9 @@ if (mediaAluno < 5){
 }
 
 console.log(msg.toUpperCase());
+
+console.log("Exemplo 4");
+
+let idade = 18;
+
+let idadeStatus = idade >= 18? console.log("maior"):console.log("menor");
