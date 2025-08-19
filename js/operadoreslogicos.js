@@ -35,3 +35,15 @@ if (feriado === true || fimDeSemana === true){
 } else {
     console.log("Tem aula!");    
 }
+
+console.log("Exemplo !");
+
+/* Inverte a lógica */
+
+let blackFriday = false;
+
+if (!blackFriday){
+    console.log("Preços Normais");
+} else {
+    console.log("Desconto");
+}
