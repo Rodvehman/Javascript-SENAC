@@ -45,7 +45,7 @@ if (media >= 7){
     resposta = "reprovado";
 }
 
-console.log(`O Aluno ${aluno2.nome} foi ${resposta.toUpperCase()}, com a média ${media}`);
+console.log(`O Aluno ${aluno2.nome.toUpperCase()} foi ${resposta.toUpperCase()}, com a média ${media}`);
 
 aluno2.nome = "João";
 aluno2.nota2 = 7;
@@ -58,4 +58,29 @@ if (media >= 7){
     resposta = "reprovado";
 }
 
-console.log(`O Aluno ${aluno2.nome} foi ${resposta.toUpperCase()}, com a média ${media}`);
+console.log(`O Aluno ${aluno2.nome.toUpperCase()} foi ${resposta.toUpperCase()}, com a média ${media}`);
+
+/* Verificando média do aluno
+    Média acima de 9: ótimo;
+    Média acima de 7: bom;
+    Média acima de 5: ruim;
+    Média abaixo de 5: péssimo.
+*/
+
+let mediaAluno = 5;
+let msg;
+
+
+if (mediaAluno < 5){
+    msg = "Péssimo";
+} else if (mediaAluno < 7){
+    msg = "Ruim";
+} else if (mediaAluno < 9){
+    msg = "Bom";
+} else if (mediaAluno >= 9){
+    msg = "Ótimo";   
+} if (mediaAluno > 10 || mediaAluno < 0){
+    msg = "Nota inválida. O máximo é 10 e o mínimo é 0."
+}
+
+console.log(msg.toUpperCase());
