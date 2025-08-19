@@ -45,7 +45,7 @@ if (media >= 7){
     resposta = "reprovado";
 }
 
-console.log(`O Aluno ${aluno2.nome} foi ${resposta}, com a média ${media}`);
+console.log(`O Aluno ${aluno2.nome} foi ${resposta.toUpperCase()}, com a média ${media}`);
 
 aluno2.nome = "João";
 aluno2.nota2 = 7;
@@ -58,4 +58,4 @@ if (media >= 7){
     resposta = "reprovado";
 }
 
-console.log(`O Aluno ${aluno2.nome} foi ${resposta}, com a média ${media}`);
+console.log(`O Aluno ${aluno2.nome} foi ${resposta.toUpperCase()}, com a média ${media}`);
