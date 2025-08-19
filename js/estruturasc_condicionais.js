@@ -17,10 +17,18 @@ if (numero >= 10){
 
 
 let aluno ="Ozzy";
-let idade = 18;
+let idade = 18
 
-if (idade >= 18){
+let aluno2 = {
+    nome: "Ozzy",
+    idade: 18
+};
+
+if (aluno2.idade >= 18){
     console.log("Maior");
 } else {
     console.log("Menor");
 }
+
+aluno2.idade >= 18? console.log("maior") : console.log("Menor");
+
