@@ -22,4 +22,56 @@ const exemplo1 = function(){
     console.log("Olá");
 }
 
-console.log(exemplo1);
+exemplo1();
+
+console.log("\nFunção Decarada");
+
+function exemplo2(){
+    console.log("Esta é uma função nomeada!");
+}
+
+exemplo2();
+
+console.log("Arrow Functions\n");
+
+/*
+    Sintaxe potencialmente mais simples para funções Javascript
+*/
+
+const exemplo3 = () => {
+    console.log("Arrow Function");
+    
+};
+
+exemplo3();
+
+/* 
+    Obs: funções (em qualquer sintaxe) também pode trabalhar com parâmetros/argumentos.
+
+    Quando uma função precisa de valores para algum tipo de processamento, ela recebe valores através de parâmetros entre parêntses.
+
+    Geralmente, ao terminar o processamento dos dados, a função "retorna" para um resultado.
+*/
+
+let nome = "Rodrigo";
+
+function saudacao(nome = "Visitante"){
+    console.log(`Olá, ${nome}`);
+}
+
+saudacao("Rodrigo");
+saudacao(2);
+saudacao();
+
+console.log("\nFunção com parâmetros e retorno");
+
+function multiplicar(valor1, valor2){
+    let resultado = valor1 * valor2;
+    return resultado;
+}
+
+let resultado1 = multiplicar(10, 5);
+let resultado2 = multiplicar(200, 10);
+
+console.log(resultado1);
+console.log(resultado2);

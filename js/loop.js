@@ -69,5 +69,5 @@ const clientes = [
 ]
 
 for (const cliente of clientes){
-    console.log(cliente);
+    console.log(`ID: ${cliente.id}\nCliente: ${cliente.nome}`);
 }
