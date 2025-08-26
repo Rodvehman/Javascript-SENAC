@@ -71,3 +71,8 @@ const clientes = [
 for (const cliente of clientes){
     console.log(`ID: ${cliente.id}\nCliente: ${cliente.nome}`);
 }
+
+for (let count = 0; count <= cliente.length; count++){
+    console.log(`ID: ${cliente.id}\nNome: ${cliente.nome}`);
+    
+}

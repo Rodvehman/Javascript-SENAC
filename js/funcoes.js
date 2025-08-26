@@ -59,6 +59,8 @@ function saudacao(nome = "Visitante"){
     console.log(`Olá, ${nome}`);
 }
 
+/* Sempre que tivermos a necessidade de trabalhar com o resultado do processamento de uma função, então essa função deverá ter o return. */
+
 saudacao("Rodrigo");
 saudacao(2);
 saudacao();
@@ -75,3 +77,49 @@ let resultado2 = multiplicar(200, 10);
 
 console.log(resultado1);
 console.log(resultado2);
+
+console.log("\nSimplificando o Arrow Function\n");
+
+
+//Sintaxe declarada/nomeada
+function somar(valor1, valor2){
+    return valor1 + valor2;
+}
+
+console.log(somar(3,2));
+
+//Sintaxe Arrow Function com retorno implícito
+
+const soma = (vlr1, vlr2) => vlr1 + vlr2;
+
+console.log(soma(10, 20));
+
+console.log("\nFormatando valor monetário\n");
+
+let preco = 5000;
+let desconto = preco * 0.1;
+let precoFinal = preco - desconto;
+
+console.log(`Preço: ${preco}\nDesconto: ${desconto}\nPreço Final: ${precoFinal}`);
+
+//Usando recursos da classe Intl (Internacionalização)
+
+const exemp = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL",
+}).format(preco);
+
+console.log(exemp);
+
+function moeda(valor, regiao, moeda){
+    return new Intl.NumberFormat(regiao, {
+        style: "currency",
+        currency: moeda,
+    }).format(valor);  
+}
+
+let teste1 = moeda(1000, "pt-br", "BRL");
+let teste2 = moeda(1000, "en", "USD");
+
+console.log(teste1);
+console.log(teste2);
