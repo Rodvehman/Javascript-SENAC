@@ -53,4 +53,21 @@ for (const prop in pessoa){
     console.log(pessoa[prop]);
 }
 
+const clientes = [
+    {
+        id: 1,
+        nome: "Dio"
+    },
+    {
+        id: 2,
+        nome: "Ozzy"
+    },
+    {
+        id: 3,
+        nome: "Ian"
+    }
+]
 
+for (const cliente of clientes){
+    console.log(cliente);
+}
