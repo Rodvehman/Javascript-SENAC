@@ -63,3 +63,32 @@ referencia.addEventListener("click", function(){
     primeiroParagrafo.classList.remove("centralizar");
 });
 
+/* Modo Noturno
+
+*/
+
+const btnText = "Ativar";
+
+const btnModoNoturno = document.querySelector("#noturno");
+
+btnModoNoturno.addEventListener("click", function(){
+    /* 
+    Usamos o Toggle para alternar entre adicionar a classe ou remover a classe, de acordp com cada clique do botão.
+     */
+    
+    pagina.classList.toggle("modo-noturno");
+
+    /* Desafios
+        1) Faça a mudança acontecer gradualmente (use o transition);
+
+        2) Se o modo noturno estiver ativado, ou seja, se a classe modo-noturno estiver aplicada à página, faça o texto do botão mudar para "Desativar", caso contrário, faça o botão exibir "Ativar".
+    */
+   if (pagina.classList.toggle){
+        btnModoNoturno.textContent = "Desativar";
+   }
+   if (!pagina.classList.toggle) {
+        btnModoNoturno = pagina;
+        btnText = "Desativar";
+   }
+});
+
