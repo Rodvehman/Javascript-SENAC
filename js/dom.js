@@ -48,7 +48,7 @@ const primeiroParagrafo = document.querySelector("h1");
 
 console.log(primeiroParagrafo);
 
-primeiroParagrafo.addEventListener("click", function(){
+primeiroParagrafo.addEventListener("mouseover", function(){
     primeiroParagrafo.textContent = "Praticando Eventos!";
     primeiroParagrafo.classList.add("centralizar");
 });
@@ -62,3 +62,4 @@ referencia.addEventListener("click", function(){
     primeiroParagrafo.textContent = "Eventos";
     primeiroParagrafo.classList.remove("centralizar");
 });
+
