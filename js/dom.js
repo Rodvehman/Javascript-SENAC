@@ -67,7 +67,7 @@ referencia.addEventListener("click", function(){
 
 */
 
-const btnText = "Ativar";
+const btnText = document.querySelector("button");
 
 const btnModoNoturno = document.querySelector("#noturno");
 
